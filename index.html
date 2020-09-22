@@ -18,8 +18,18 @@
     <div id="app">
         <header>
         </header>
-        
-        
+        <div id="blocks_wrapper">
+        <!-- START: Card Template -->
+        <template>
+        <div v-for="(block, id) in cardData" :key="id" class="block_container">
+            <img :src="block.imgsrc" :alt="block.imgalt" class="block_img"/>
+            <p class="block_postedby">Posted by: <span class="block_postedby_content">{{ block.postedby }}</span></p>
+            <p class="block_posteddate">Posted on: <span class="block_posteddate_content">{{ block.posteddate }}</span></p>
+            <p class="block_caption">{{ block.caption }}</p>
+        </div>
+        </template>
+        <!-- END: Card Template -->
+        </div>
     </div>
     <!-- Load Vue files -->
     <script src="./main.js"></script>

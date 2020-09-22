@@ -1,0 +1,92 @@
+/* OVERALL STYLES */
+:root {
+    --color-charcoal: #3B3B3B;
+    --color-lightgrey-text: #707070;
+}
+
+/* ------------------------------- */
+/* Base text styles */
+
+h1 {
+  font-family: 'Sora', Helvetica, sans-serif;
+  font-size: 30px;
+  color: var(--color-charcoal);
+}
+
+h2 {
+  font-family: 'Sora', Helvetica, sans-serif;
+  font-size: 24px;
+  color: var(--color-charcoal);
+}
+
+p {
+  font-family: 'Sora', Helvetica, sans-serif;
+  font-size: 14px;
+  color: var(--color-charcoal);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Block wrapper */
+
+#blocks_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Block container */
+
+.block_container {
+    width: 80%;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #aaa;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------- */
+/* Block content spots */
+
+.block_img {
+    width: 100%;
+}
+
+.block_postedby {
+    font-family: 'Sora', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-charcoal);
+}
+
+.block_postedby_content {
+    font-family: 'Sora', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-charcoal);
+}
+
+.block_posteddate {
+    font-family: 'Sora', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-charcoal);
+}
+
+.block_posteddate_content {
+    font-family: 'Sora', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-charcoal);
+}
+
+.block_caption {
+    font-family: 'Sora', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-lightgrey-text);
+}
