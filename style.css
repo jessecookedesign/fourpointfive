@@ -2,6 +2,7 @@
 :root {
     --color-charcoal: #3B3B3B;
     --color-lightgrey-text: #707070;
+    --color-link: #0038F5;
 }
 
 /* ------------------------------- */
@@ -132,37 +133,48 @@ nav a {
     width: 100%;
 }
 
-.block_postedby {
+.block_label {
     font-family: 'Sora', Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: var(--color-charcoal);
 }
 
-.block_postedby_content {
+.block_info {
     font-family: 'Sora', Helvetica, sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: var(--color-charcoal);
 }
 
-.block_posteddate {
-    font-family: 'Sora', Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--color-charcoal);
-}
-
-.block_posteddate_content {
+.block_link {
     font-family: 'Sora', Helvetica, sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color: var(--color-charcoal);
+    color: var(--color-link);
+    border-bottom: 1px solid var(--color-link);
 }
 
 .block_caption {
     font-family: 'Sora', Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: var(--color-lightgrey-text);
+}
+
+.block_color {
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.block_color_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.block_color_container p{
+    font-family: 'Roboto Mono', monospace;
     color: var(--color-lightgrey-text);
 }

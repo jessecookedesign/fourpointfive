@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/folkstore_favicon.jpg"/>
     <!-- Load Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- Load Vue.js - Dev Version -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- fourpointfive is a product built by Jesse Cooke of Pixl Haus. Learn more about Pixl Haus at www.pixlhaus.design -->
@@ -59,7 +60,7 @@
         </g>
         </svg>
                     <nav>
-                        <a href="#">SIGN UP</a>
+                        <a href="#">SUBMIT A DESIGN</a>
                     </nav>
                 </div>
                 
@@ -73,9 +74,21 @@
         <template>
         <div v-for="(block, id) in cardData" :key="id" class="block_container">
             <img :src="block.imgsrc" :alt="block.imgalt" class="block_img"/>
-            <p class="block_postedby">Posted by: <span class="block_postedby_content">{{ block.postedby }}</span></p>
-            <p class="block_posteddate">Posted on: <span class="block_posteddate_content">{{ block.posteddate }}</span></p>
+            <p class="block_label">Posted by: <span class="block_info">{{ block.postedby }}</span></p>
+            <p class="block_label">Posted on: <span class="block_info">{{ block.posteddate }}</span></p>
+            <p class="block_label">Source: <a v-bind:href="block.sourceurl" target="_blank" class="block_link">{{ block.source }}</a></p>
             <p class="block_caption">{{ block.caption }}</p>
+            <div class="block_color_container">
+                <div>
+                    <div class="block_color" :style="{ background: block.color1 }"></div><p>{{ block.color1 }}</p>
+                </div>
+                <div>
+                    <div class="block_color" :style="{ background: block.color2 }"></div><p>{{ block.color2 }}</p>
+                </div>
+                <div>
+                    <div class="block_color" :style="{ background: block.color3 }"></div><p>{{ block.color3 }}</p>
+                </div>
+            </div>
         </div>
         </template>
         <!-- END: Card Template -->
