@@ -118,12 +118,13 @@ nav a {
     overflow: hidden;
     box-shadow: 0 2px 6px #aaa;
     padding: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 600px) {
     .block_container {
         width: 80%;
+        margin-bottom: 20px;
     }
 }
 
