@@ -107,6 +107,7 @@ nav a {
     #header_h1 {
         font-size: 28px;
         grid-column: 1/4;
+        margin-bottom: 90px;
     }
     
     #header_content_container {
