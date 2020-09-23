@@ -88,7 +88,7 @@
                 <div>
                     <div class="block_color" :style="{ background: block.color2 }"></div><p>{{ block.color2 }}</p>
                 </div>
-                <div>
+                <div v-if="block.color3">
                     <div class="block_color" :style="{ background: block.color3 }"></div><p>{{ block.color3 }}</p>
                 </div>
             </div>
