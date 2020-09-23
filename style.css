@@ -101,6 +101,7 @@ nav a {
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 0;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 600px) {
@@ -113,16 +114,16 @@ nav a {
 /* Block container */
 
 .block_container {
-    width: 80%;
+    width: 40%;
     overflow: hidden;
     box-shadow: 0 2px 6px #aaa;
     padding: 30px;
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .block_container {
-        margin: 0 20px;
+        width: 80%;
     }
 }
 
