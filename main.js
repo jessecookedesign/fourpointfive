@@ -16,10 +16,15 @@ var app = new Vue({
                     },
                     {
                     id: 2,
-                    imgsrc: "https://i.ibb.co/M6PxVMp/fpf-asset-0001-folkstore.jpg",
-                    imgalt: "Screenshot of folkstore.app",
+                    imgsrc: "https://i.ibb.co/MBv5xTb/fpf-asset-0002-liquifylochie.jpg",
+                    imgalt: "Screenshot of liquify.lochieaxon.com",
                     postedby: "Lochie Axon",
-                    posteddate: "Sept. 22, 2020"
+                    posteddate: "Sept. 22, 2020",
+                    source: "liquify.lochieaxon.com",
+                    sourceurl: "https://liquify.lochieaxon.com/",
+                    color1: "#19191F",
+                    color2: "#7A8299",
+                    color3: "#ffffff",
                     }
                 ]
             }
