@@ -103,20 +103,31 @@ nav a {
     line-height: 1.7;
 }
 
+.headeranchor {
+    font-family: 'Sora', Helvetica, sans-serif;
+    font-size: 16px;
+    border-bottom: 2px solid;
+}
+
+.headeranchor_container {
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 600px) {
     #header_h1 {
         font-size: 28px;
         grid-column: 1/4;
         margin-bottom: 90px;
     }
-    
     #header_content_container {
         display: block;
     }
-    
     .headeranchor {
         border: 2px solid;
         padding: 10px 20px;
+    }
+    .headeranchor_container {
+        margin: 50px 0;
     }
 }
 
