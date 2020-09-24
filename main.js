@@ -6,7 +6,7 @@ var app = new Vue({
                     id: 9995,
                     imgsrc: "https://i.ibb.co/k5m8PkY/fpf-asset-0005-wisk.jpg",
                     imgalt: "Screenshot of wisk.ai",
-                    postedby: "Cam",
+                    postedby: "Cam Garcia Riedel",
                     posteddate: "Sept. 24, 2020",
                     source: "wisk.ai",
                     sourceurl: "https://www.wisk.ai/",
