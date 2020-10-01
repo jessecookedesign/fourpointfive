@@ -17,7 +17,7 @@
     <!-- Set favicon -->
     <link rel="shortcut icon" href="images/folkstore_favicon.jpg"/>
     <!-- Load Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- Google -->
     <script data-ad-client="ca-pub-8595333601352383" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -76,15 +76,18 @@
                         <a href="signup.html">SUBMIT A DESIGN</a>
                     </nav>
                 </div>
-                
+                <hr class="light_hr margin_top_50">
                 <div id="header_content_container">
-                    <h1 id="header_h1">Find accessible design inspiration that meets or exceeds WCAG 2.1 guidelines for color contrast.</h1>
+                    <div id="header_col_1">
+                        <h1 id="header_h1">ACCESSIBLE DESIGN INSPIRATION</h1>
+                        <h2 id="header_h2">that meets or exceeds WCAG 2.1 guidelines for color contrast.</h2>
+                    </div>
                 </div>
-                    <details class="header_details">
+                    <details class="header_details" v-on:click="detailsOpen1" :class="{'details_active': detailsActive1}">
                         <summary class="header_summary">What is color contrast?</summary>
                         <p class="header_p">Color contrast is a key part in designing ADA-compliant web experiences.<br><br>The rules for color contrast come from WCAG 2.1 (Web Content Accessibility Guidelines) which define how to make web content more accessible to people with disabilities.</p>
                     </details>
-                    <details class="header_details">
+                    <details class="header_details" v-on:click="detailsOpen2" :class="{'details_active': detailsActive2}">
                         <summary class="header_summary">What are the guidelines?</summary>
                         <p class="header_p">WCAG 2.1 lists the following for color contrast guidelines:<br><br>The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:</p>
                         <ul id="wcag_list">
@@ -94,13 +97,18 @@
                         </ul>
                     </details>
                     <div class="headeranchor_container">
-                            <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" class="headeranchor">Learn more here</a>
-                        </div>
-                        <div class="headeranchor_container">
-                            <a href="https://webaim.org/resources/contrastchecker/" class="headeranchor">Contrast checking tool</a>
-                        </div>
+                        <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" class="headeranchor">Learn more here</a>
+                    </div>
+                    <div class="headeranchor_container">
+                        <a href="https://webaim.org/resources/contrastchecker/" class="headeranchor">Contrast checking tool</a>
+                    </div>
+                
             </div>
         </header>
+        <div id="blocks_header">
+            <hr class="light_hr">
+            <h2>Most Recent</h2>
+        </div>
         <div id="blocks_wrapper">
         <!-- START: Card Template -->
         <template>

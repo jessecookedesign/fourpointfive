@@ -1,6 +1,8 @@
 var app = new Vue({
             el: '#app',
             data: {
+                detailsActive1: false,
+                detailsActive2: false,
                 cardData: [
                     {
                     id: 9995,
@@ -62,6 +64,14 @@ var app = new Vue({
                     color3: "#ffffff"
                     }
                 ]
+            },
+            methods: {
+                detailsOpen1: function(){
+                    this.detailsActive1 = !this.detailsActive1
+                },
+                detailsOpen2: function(){
+                    this.detailsActive2 = !this.detailsActive2
+                }
             }
         
         })
