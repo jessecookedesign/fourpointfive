@@ -320,6 +320,25 @@ nav a:hover {
     color: var(--color-lightgrey-text);
 }
 
+.block_ratings_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    margin-top: 50px;
+    grid-template-rows: 30px;
+}
+
+.block_ratingcolor {
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.block_rating_text {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-lightgrey-text);
+    text-align: center;
+    align-self: center;
+}
+
 
 /* Signup page */
 
