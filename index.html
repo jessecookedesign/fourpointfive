@@ -105,7 +105,6 @@
             </div>
         </header>
         <div id="blocks_header">
-            <hr class="light_hr">
             <h2>Most Recent</h2>
         </div>
         <div id="blocks_wrapper">
@@ -127,17 +126,22 @@
                     <div class="block_color" :style="{ background: block.color3 }"></div><p>{{ block.color3 }}</p>
                 </div>
             </div>
-            <div class="block_ratings_container" v-if="block.colorrating1">
-                <div class="block_ratingcolor" :style="{ background: block.colormatcha1 }"></div>
-                <div class="block_ratingcolor" :style="{ background: block.colormatcha2 }"></div>
-                <p class="block_rating_text">=</p>
-                <p class="block_rating_text">{{ block.colorrating1 }}</p>
+            <div class="margin_top_bottom_20">
+                <hr class="hr_grey">
             </div>
-            <div class="block_ratings_container" v-if="block.colorrating2">
-                <div class="block_ratingcolor" :style="{ background: block.colormatchb1 }"></div>
-                <div class="block_ratingcolor" :style="{ background: block.colormatchb2 }"></div>
-                <p class="block_rating_text">=</p>
-                <p class="block_rating_text">{{ block.colorrating2 }}</p>
+            <div>
+                <div class="block_ratings_container" v-if="block.colorrating1">
+                    <div class="block_ratingcolor" :style="{ background: block.colormatcha1 }"></div>
+                    <div class="block_ratingcolor" :style="{ background: block.colormatcha2 }"></div>
+                    <p class="block_rating_text">=</p>
+                    <p class="block_rating_text">{{ block.colorrating1 }}</p>
+                </div>
+                <div class="block_ratings_container" v-if="block.colorrating2">
+                    <div class="block_ratingcolor" :style="{ background: block.colormatchb1 }"></div>
+                    <div class="block_ratingcolor" :style="{ background: block.colormatchb2 }"></div>
+                    <p class="block_rating_text">=</p>
+                    <p class="block_rating_text">{{ block.colorrating2 }}</p>
+                </div>
             </div>
         </div>
         </template>
